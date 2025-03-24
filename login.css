@@ -1,0 +1,152 @@
+* {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Impede a rolagem */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Remove qualquer rolagem vertical */
+}
+
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh; /* Garante que o conteúdo ocupe toda a altura da viewport */
+}
+
+.image {
+    width: 48vw;
+    height: 100vh; /* Garante que a imagem ocupe toda a altura da viewport */
+}
+
+.main-login {
+    width: 52vw;
+    display: flex;
+    flex-direction: column; /* Organiza elementos verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.logo {
+    width: 170px;
+    height: 141px;
+    margin-top: 40px;
+}
+
+.textos {
+    margin-top: 20px;
+    text-align: center; /* Centraliza o texto */
+}
+ 
+.welcome {
+    font-size: 24px;
+    color: #090937;
+    opacity: 0.6;
+}
+
+h3 {
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.email-login, .password-login {
+    width: 400px;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column; /* Organiza os inputs verticalmente */
+}
+
+.email, .password {
+    color: #090937;
+    font-size: 20px;
+}
+
+.email-input, .password-input {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    background-color: #F4F4FF;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+::placeholder {
+    color: #090937;
+    opacity: 0.4;
+    font-size: 20px;
+    text-align: center;
+}
+
+.input-checkbox {
+    width: 400px;
+    margin-top: 15px; /* Dá espaço em relação ao input de senha */
+}
+
+.checkbox {
+    margin-top: 10px;
+    width: 18px;
+    height: 18px;
+    color: #6251DD;
+}
+
+.remeber {
+    color: #6251DD;
+    font-size: 15px;
+}
+
+.first-button, .second-button {
+    width: 400px;
+    height: 60px;
+}
+
+.first-button {
+    margin-top: 55px;
+}
+
+.second-button {
+    margin-top: 25px;
+}
+
+.entrar, .registrar {
+    width: 400px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.entrar {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 32.78px;
+    text-align: center;
+    border: none;
+    background-color: #EF6B4A;
+    border-radius: 5px;
+    color: white;
+}
+
+.registrar {
+    border: 1px solid #6251DD;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32.78px;
+    text-align: center;
+    color: #6251DD;
+}
+
+.entrar:hover, .registrar:hover {
+    opacity: 0.8;
+}
